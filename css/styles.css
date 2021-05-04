@@ -252,13 +252,14 @@ ul {
   transition-timing-function: linear;
 }
 .modal-content {
+  position: relative;
   width: 528px;
   height: 581px;
   background: var(--third-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 8px;
+  padding: 40px;
 }
 .is-hidden {
   opacity: 0;
@@ -266,6 +267,9 @@ ul {
   pointer-events: none;
 }
 .modal-icon-close-ellipse {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,6 +285,51 @@ ul {
 .modal-icon-close-ellipse:hover,
 .modal-icon-close-ellipse:focus {
   color: var(--hover-color);
+}
+.modal-content-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-input {
+  border: none;
+  resize: none;
+  display: block;
+  width: 100%;
+}
+.modal-form-input:focus {
+  outline: none;
+}
+.modal-form-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  min-height: 40px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+}
+.modal-form-input-container:focus-within
+ {
+  border-color: var(--hover-color);
+  color:var(--hover-color);
+}
+.modal-form-input-icon {
+  margin-right: 15px;
+}
+.modal-form-label {
+  font-size: 12px;
+  line-height: 1.667;
+  letter-spacing: 0.01em;
+  color: var(--second-color);
 }
 /* ===== END OKNO MODALNE =====*/
 
