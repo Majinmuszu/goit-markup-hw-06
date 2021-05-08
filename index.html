@@ -92,7 +92,11 @@
                 <svg class="modal-form-input-icon icon" width="12" height="12">
                   <use href="images/icons/icons.svg#icon-form-name"></use>
                 </svg>
-                <input id="user-name" type="text" name="UserName" class="modal-form-input" />
+                <input id="user-name" 
+                       type="text" 
+                       name="UserName" 
+                       class="modal-form-input"
+                       required />
               </div>
             </div>
 
@@ -102,7 +106,11 @@
                 <svg class="modal-form-input-icon icon" width="13" height="13">
                   <use href="images/icons/icons.svg#icon-form-tel"></use>
                 </svg>
-                <input id="user-tel" type="tel" name="UserPhoneNumber" class="modal-form-input" />
+                <input id="user-tel" 
+                       type="tel" 
+                       name="UserPhoneNumber" 
+                       class="modal-form-input"
+                       required />
               </div>
             </div>
 
@@ -112,19 +120,31 @@
                 <svg class="modal-form-input-icon icon" width="15" height="12">
                   <use href="images/icons/icons.svg#icon-form-envelope"></use>
                 </svg>
-                <input id="user-email" type="email" name="UserEmailAdress" class="modal-form-input" />
+                <input id="user-email" 
+                       type="email" 
+                       name="UserEmailAdress" 
+                       class="modal-form-input"
+                       required />
               </div>
             </div>
 
             <div>
               <label class="modal-form-label" for="user-comment">Komentarz</label>
               <div class="modal-form-input-container">
-                <textarea id="user-comment" rows="5" name="UserComments" class="modal-form-input" placeholder="Wprowadź tekst" ></textarea>
+                <textarea id="user-comment" 
+                          rows="5" 
+                          name="UserComments" 
+                          class="modal-form-input" 
+                          placeholder="Wprowadź tekst" ></textarea>
               </div>
             </div>
 
             <div class="modal-form-checkbox-container">
-              <input id="regulations" type="checkbox" name="PrivacyPolicyAgreement" class="modal-form-checkbox" required />
+              <input id="regulations" 
+                     type="checkbox" 
+                     name="PrivacyPolicyAgreement" 
+                     class="modal-form-checkbox" 
+                     required />
               <label for="regulations" class="modal-form-checkbox-label"
                   >Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></label>
             </div>
