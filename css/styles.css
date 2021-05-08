@@ -392,10 +392,21 @@ ul {
   color: var(--hover-color);
 }
 .modal-form-checkbox {
-  width: 16px;
-  height: 15px;
+  width: 1em;
+  height: 1em;
   margin-right: 7px;
   border: 1px solid #000;
+  border-radius: 2px;
+  appearance: none;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--third-color);
+}
+.modal-form-checkbox:checked{
+  background-image: url(../images/icons/checkbox.svg);
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
 }
 .modal-form-submit-btn {
   width: 200px;
