@@ -395,13 +395,13 @@ ul {
   width: 1em;
   height: 1em;
   margin-right: 7px;
-  border: 1px solid #000;
+  border: 1px solid var(--main-color);
   border-radius: 2px;
   appearance: none;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  color: var(--third-color);
+  cursor: pointer;
 }
 .modal-form-checkbox:checked{
   background-image: url(../images/icons/checkbox.svg);
